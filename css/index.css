@@ -1,1 +1,343 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+#main {
+  width: 70rem;
+  margin: 0 auto;
+}
+header nav {
+  display: flex;
+  justify-content: flex-start;
+}
+header nav a {
+  padding: 2.5% 0 0.5% 15%;
+  font-size: 1.3rem;
+  color: grey;
+}
+.content .welcome {
+  background-color: lightgrey;
+}
+.content .welcome .welcome-up {
+  display: flex;
+  margin: 20px 20px 20px 15px;
+  flex-wrap: wrap;
+  width: 800px;
+}
+.content .welcome .welcome-up .welcome-img {
+  width: 20rem;
+  height: 25rem;
+  padding: 3rem 1rem 1rem 0;
+}
+.content .welcome .welcome-up .welcome-2 .let {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  background-color: grey;
+  width: 6.5rem;
+  margin: 1.5rem 0 3rem 0;
+}
+.content .welcome .welcome-up .welcome-2 .let a {
+  color: white;
+}
+.content .welcome .batuhan {
+  padding: 10% 0 0 10%;
+  font-size: 2rem;
+}
+.content .part2 {
+  display: flex;
+  margin-top: 3rem;
+}
+.content .part2 h2 {
+  font-size: 1.5rem;
+}
+.content .part2 .listen {
+  width: 35rem;
+}
+.content .part2 .stuff {
+  width: 35rem;
+}
+.content .part2 .stuff h2 {
+  padding-left: 0.7rem;
+}
+.content .part2 .stuff p {
+  border: 1px solid black;
+  padding: 0.75rem;
+  margin: 0.5rem;
+}
+#customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 3rem;
+}
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+#customers tr:hover {
+  background-color: #ddd;
+}
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: grey;
+  color: white;
+}
+footer {
+  margin: 3rem 0 0 21rem;
+  border: 1px solid black;
+  text-align: center;
+  padding: 1rem;
+  width: 18rem;
+  background-color: grey;
+  color: white;
+}
+@media (max-width: 800px) {
+  #main {
+    width: 64%;
+    margin: 5% 0 0 20%;
+  }
+  header {
+    width: 40%;
+    align-items: flex-start;
+  }
+  header nav {
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    width: 50.8%;
+    padding: 0;
+  }
+  header nav a {
+    color: grey;
+    font-size: 1.1rem;
+    padding: 2.5% 0 0.5% 23%;
+  }
+  .content {
+    width: 100%;
+  }
+  .content .welcome {
+    background-color: lightgrey;
+  }
+  .content .welcome .welcome-up {
+    display: flex;
+    margin: 20px 20px 20px 15px;
+    flex-wrap: wrap;
+    width: 55.8%;
+  }
+  .content .welcome .welcome-up .welcome-img {
+    width: 77%;
+    height: 120%;
+    padding-left: 40%;
+  }
+  .content .welcome .welcome-up .welcome-2 {
+    width: 77%;
+    padding: 5% 0 0 49%;
+  }
+  .content .welcome .welcome-up .welcome-2 .let {
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 0.4rem;
+    background-color: grey;
+    width: 6.5rem;
+    margin: 1.5rem 0 3rem 0;
+  }
+  .content .welcome .welcome-up .welcome-2 .let a {
+    color: white;
+  }
+  .content .welcome .batuhan {
+    padding: 5% 0 0 49%;
+    width: 100%;
+    font-size: 160%;
+  }
+  .content .part2 {
+    display: flex;
+    margin-top: 3rem;
+  }
+  .content .part2 h2 {
+    font-size: 1.5rem;
+  }
+  .content .part2 .listen {
+    width: 35rem;
+  }
+  .content .part2 .stuff {
+    width: 35%;
+  }
+  .content .part2 .stuff h2 {
+    padding-left: 0.7rem;
+  }
+  .content .part2 .stuff p {
+    border: 1px solid black;
+    padding: 0.75rem;
+    margin: 0.5rem;
+  }
+  footer {
+    width: 64%;
+    margin: 5% 0 0 9%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5%;
+    background-color: grey;
+    color: white;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+  }
+  header nav {
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: grey;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    width: 100%;
+  }
+  header nav a {
+    padding: 5% 0 5% 0;
+    color: white;
+    border: 1px solid black;
+    text-align: center;
+  }
+}
